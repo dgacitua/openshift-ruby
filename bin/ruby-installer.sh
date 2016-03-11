@@ -23,7 +23,7 @@ alias gem="gem --config-file ${OPENSHIFT_DATA_DIR}.gemrc"
 
     source $RBENV_INIT
 
-    rbenv install $RUBY_VERSION
+    rbenv install --verbose $RUBY_VERSION	# Adding verbose flag to track progress
     rbenv global $RUBY_VERSION
 
     gem install bundler
